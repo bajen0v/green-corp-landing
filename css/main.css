@@ -9,6 +9,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .header__logo {
@@ -59,7 +64,7 @@ button:hover {
     max-width: 550px;
 }
 
-h1 {
+.about h1 {
     font-size: 70px; 
     line-height: 76px;
 }
@@ -79,11 +84,23 @@ h1 {
 
 .about__image {
     width: 500px;
-  }
-   
+}
+
+@keyframes sun {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .about__sun-image {
    width: 100px;
    height: 100px;
+
+   position: absolute;
+   animation: sun 10s linear infinite;
 }
 
 .form__container {
@@ -187,4 +204,68 @@ footer {
 
 .footer__links a {
     margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+
+    .form h1,
+    .about h1 {
+        font-size: 36px; 
+        line-height: 40px
+    }
+
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .about__image {
+        width: 280px;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px;
+    }
+
+    .header__logo {
+        height: 20px;
+    }
+
+    .header a {
+        margin-right: 10px;
+    }
+    
+    .about,
+    .form,
+    footer {
+        padding: 50px 10px;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .form h1,
+    .about h1 {
+        font-size: 36px; 
+        line-height: 40px;
+    }
+
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .about__image {
+        width: 280px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
 }
