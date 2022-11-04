@@ -151,3 +151,40 @@ select {
 input {
     outline: none;
 }
+
+footer {
+    margin: 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__copyright p {
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.footer__group {
+    margin-right: 80px;
+}
+
+.footer__group h3 {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links a {
+    margin-bottom: 15px;
+}
