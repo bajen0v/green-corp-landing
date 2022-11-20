@@ -55,7 +55,7 @@ button:hover {
     align-items: center;
     padding: 115px 0;
 
-    background: url("/img/back.png") no-repeat;
+    background-image: url("/img/back.png");
     background-position: center;
     background-size: cover;
 }
@@ -213,7 +213,7 @@ button:hover {
 }
 
 .promo__image {
-    background-image: url(/img/promo.jpeg);
+    background-image: url("/img/promo.jpeg");
     width: 50%;
     flex-shrink: 0;
     background-size: cover;
