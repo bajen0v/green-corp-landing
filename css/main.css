@@ -50,6 +50,7 @@ button:hover {
 }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,6 +59,14 @@ button:hover {
     background-image: url("/img/back.png");
     background-position: center;
     background-size: cover;
+}
+
+.orb-canvas {
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+
 }
 
 .about__info {
