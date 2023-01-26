@@ -10,10 +10,17 @@ header {
     align-items: center;
     padding: 20px;
 
-    position: sticky;
-    top: 0;
+    position: fixed;
+    background: none;
+    left: 0;
+    right: 0;
     z-index: 1;
-    background-color: #fff;
+    transition: box-shadow, background-color .25s ease;
+}
+
+.header__scrolled {
+    background-color: rgba(250,250, 250, 0.5);
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -429,6 +436,7 @@ footer {
 
     .about {
         flex-direction: column-reverse;
+        padding-top: 200px;
     }
 
     .form h1,
